@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color: yellowgreen;
+    width: 100%;
+}
+
+section img{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 50%;
+}
+
+nav{
+    background-color: black;
+    text-align: right;
+    width: 100%;
+}
+
+nav a:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+nav a{
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-decoration: none;
+    display: inline-block;
+    color: silver;
+    margin: 8px;
+    height: 5%;
+}
+
+.contenedor img{
+    border-bottom: 10px solid #b0c80b;
+    height: 300px;
+    width: 100%;
+}
+
+.flecha{
+    box-shadow: 5px 5px 10px rgb(245, 234, 234);
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 72px;
+    font-size: 30px;
+    color: #fff;
+    height: 70px;
+    width: 70px;
+}
+
+.flecha:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+.atras{
+    top: calc(50% - 72px);
+    left: 2%;
+}
+
+.adelante{
+    top: calc(50% - 72px);
+    right: 2%;
+}
+
+main{
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+}
+
+.img1{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.466);
+    transition: all 0.25s;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+    margin: 2%;
+}
+
+.img1:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(10%);
+}
+
+.tdproductos{
+    border-bottom: 10px solid #b0c80b;
+}
+
+.tdproductos h1{
+    position: relative;
+    margin-left: 45%;
+    top: -250px;
+}
+
+.tdproductos p{
+    position: relative;
+    margin-left: 45%;
+    top: -200px;
+    width: 50%;
+}
+
+.tdproductos img{
+    height: 300px;
+    width: 40%;
+}
+
+.uno{
+    padding-left: 2%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+footer{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+footer p{
+    justify-content: center;
+    align-content: center;
+    color: white;
+}

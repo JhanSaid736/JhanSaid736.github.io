@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Zen+Tokyo+Zoo&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    text-align: right;
+    width: 100%;
+}
+
+nav a:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+nav a{
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-decoration: none;
+    display: inline-block;
+    color: silver;
+    margin: 8px;
+    height: 5%;
+}
+
+h1{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-decoration: overline;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+p{
+    font-family: 'Qahiri', sans-serif;
+    text-decoration: underline;
+    text-shadow: 5px 5px 10px;
+    position: relative;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.párrafo{
+    font-family: 'Qahiri', sans-serif;
+    text-decoration: none;
+}
+
+.cuadro{
+    background-color: darkgray;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 5%;
+    width: 50%;
+}
+
+.uno{
+    background-color: chartreuse;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.dos{
+    background-color: darkcyan;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.tres{
+    background-color: cyan;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+}
+
+footer{
+    background: black;
+}
+
+footer p{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}

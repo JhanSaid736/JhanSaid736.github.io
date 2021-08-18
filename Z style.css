@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.todo{
+    background-color: royalblue;
+    box-shadow: 5px 5px 10px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 3%;
+    left: 20%;
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    font-size: 15px;
+    padding: 2%;
+    width: 60%;
+    color: white;
+}
+
+header{
+    position: relative;
+    padding: 2%;
+    left: 7%;
+}
+
+header h1{
+    margin-top: 5%;
+}
+
+nav{
+    justify-content: space-around;
+    background-color: none;
+    text-align: center;
+    display: flex;
+    padding: 1%;
+    width: 80%;
+}
+
+nav a:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+nav a{
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+form{
+    box-shadow: 5px 5px 15px wheat;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 5%;
+    padding: 5% 3%;
+    width: 80%;
+    left: 7%;
+}
+
+.grupo{
+    position: relative;
+    margin: 5%;
+}
+
+input{
+    padding: 10px 5px 2px 5px;
+    font-size: 19px;
+    display: block;
+    color: black;
+    width: 100%;
+}
+
+input:focus{
+    color: rgb(81, 206, 189);
+    outline: none
+}
+
+label{
+    position: absolute;
+    font-size: 19px;
+    bottom: 0%;
+    left: 5%;
+    top: 25%;
+    color: black;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    color: royalblue;
+    font-size: 17px;
+    top: -20px;
+}
+
+.barra::before{
+    content: "";
+    height: 20%;
+    bottom: 0;
+    width: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgb(56, 163, 182), rgb(36, 255, 164));
+    transition: 0.5s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    background: linear-gradient(to right, rgb(56, 163, 182), rgb(36, 255, 164));
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    margin: 10px auto;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    border: none;
+    height: 40px;
+    width: 80%;
+}
+
+img{
+    box-shadow: 5px 5px 10px;
+    border-color: black;
+    transition: all 0.25s;
+    border-radius: 10px;
+    position: relative;
+    border: 3px solid;
+    width: 60%;
+    left: 18%;
+    top: 30px;
+}
+
+img:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0.4, 0.2);
+    transform: scale(0.9);
+}
+
+.uno{
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+footer{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+/*Entrada*/
+@media (max-width: 1200px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 430px;
+    }
+}
+@media (min-width: 1100px){
+    .contenedor_cuerpo{
+        height: 430px;
+    }
+    .submenu{
+        display: none;
+    }
+}
+@media (max-width: 1100px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 410px;
+    }
+    .submenu{
+        background: black;
+        text-align: center;
+        width: 100%;
+    }
+    .submenu a:hover{
+        transform: scale(1.2,1.2);
+        cursor: pointer;
+    }
+    .submenu a{
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        text-decoration: none;
+        display: inline-block;
+        color: silver;
+        margin: 8px;
+        height: 5%;
+    }
+    /*nav*/
+    nav a{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 380px;
+    }
+}
+@media (max-width: 800px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 350px;
+    }
+}
+@media (max-width: 700px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 320px;
+    }
+}
+@media (max-width: 600px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 310px;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 300px;
+    }
+}
+@media (max-width: 400px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 280px;
+    }
+}
+@media (max-width: 300px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 250px;
+    }
+}
+@media (max-width: 200px){
+    .contenedor_cuerpo{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: 240px;
+    }
+}
